@@ -20,7 +20,9 @@
           ./nixos/configuration.nix
           ./nixos/hardware-configuration.nix
           ./nixos/systempackages.nix
+          ./nixos/display.nix
           ./nixos/users.nix
+          ./nixos/sound.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
