@@ -20,7 +20,7 @@
           ./nixos/configuration.nix
           ./nixos/hardware-configuration.nix
           ./nixos/systempackages.nix
-          ./nixos/screen.nix
+          ./nixos/hyprland.nix
           ./nixos/users.nix
           ./nixos/sound.nix
           home-manager.nixosModules.home-manager
