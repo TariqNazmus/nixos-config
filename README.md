@@ -10,6 +10,6 @@ nvim running
     need usb support?
 
 TODO:
-- setup flake 
-- setup home manager
+- setup flake | DONE 19-09-25
+- setup home manager | DONE 19-09-25
 - add window manager 
