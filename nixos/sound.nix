@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   # Enable sound
-  pulseaudio.enable = false; # Pulseaudio is not needed with PipeWire
+  services.pulseaudio.enable = false; # Pulseaudio is not needed with PipeWire
   services.pipewire = {
     enable = true;
     alsa.enable = true;
