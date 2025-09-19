@@ -9,13 +9,12 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }@ inputs:
-  {
+  outputs = inputs@{ nixpkgs, home-manager, ... }:{
     systems = [
       "x86_64-linux"
     ];
     nixosConfigurations = {
-      sadat-pc = nixpkgs.lib.nixosSystem {
+      sadat = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           ./nixos/configuration.nix
@@ -23,7 +22,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.sadat = import [./home/home.nix];
+            home-manager.users.sadat = import ./home/home.nix;
           }
         ];
       };
