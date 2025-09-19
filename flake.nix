@@ -21,6 +21,7 @@
           ./nixos/hardware-configuration.nix
           ./nixos/systempackages.nix
           ./nixos/hyprland.nix
+          ./nixos/display-manager.nix
           ./nixos/users.nix
           ./nixos/sound.nix
           home-manager.nixosModules.home-manager
