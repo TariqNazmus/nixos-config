@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   # Enable sound
-  sound.enable = true;
   hardware.pulseaudio.enable = false; # Pulseaudio is not needed with PipeWire
   services.pipewire = {
     enable = true;
