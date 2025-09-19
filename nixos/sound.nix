@@ -7,6 +7,10 @@
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
+    #wireplumber.enable = true; # systemd only
     pulse.enable = true; # Enable PulseAudio compatibility
   };
+    environment.systemPackages = with pkgs; [
+    pavucontrol
+  ];
 }
