@@ -13,8 +13,7 @@
     enableSSHSupport = true;
   };
  };
-# Add Fish to system shells
-  environment.shells = with pkgs; [ fish ];
+
 
   environment.systemPackages = with pkgs; [
     curl
