@@ -5,7 +5,6 @@
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
   
-  home-manager.backupFileExtension = "backup";
 
 # Install user packages
   home.packages = with pkgs; [

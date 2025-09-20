@@ -30,6 +30,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup"; # or any extension you prefer
             home-manager.users.sadat = import ./home/home.nix;
           }
         ];
