@@ -7,10 +7,10 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix = {
-      url = "github:nix-community/stylix/release-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #stylix = {
+    #  url = "github:nix-community/stylix/release-25.05";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
   };
 
   outputs = inputs@{ nixpkgs, home-manager,stylix, ... }:{
@@ -21,7 +21,7 @@
       sadat = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          stylix.nixosModules.stylix
+          #stylix.nixosModules.stylix
           ./nixos/configuration.nix
           ./nixos/hardware-configuration.nix
           ./nixos/systempackages.nix
