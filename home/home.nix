@@ -11,7 +11,9 @@
     kitty # A terminal emulator
     hyprland # Ensure Hyprland is available for the user
   ];
-
+  home.sessionVariables = {
+    TERMINAL = "fish";
+  };
   # Configure Hyprland
   wayland.windowManager.hyprland = {
     enable = true;
