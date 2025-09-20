@@ -20,6 +20,7 @@
           ./nixos/configuration.nix
           ./nixos/hardware-configuration.nix
           ./nixos/systempackages.nix
+          ./nixos/terminal.nix
           ./nixos/hyprland.nix
           ./nixos/display-manager.nix
           ./nixos/fonts.nix
