@@ -10,8 +10,16 @@
     waybar # A customizable bar for Wayland
     wofi # A launcher/menu for Wayland
     hyprland # Ensure Hyprland is available for the user
+    fish   # Add Fish shell
   ];
-  programs.fish.enable = true;
+# Configure Fish shell
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting "Welcome to Fish, Sadat!"
+      fish_add_path $HOME/.local/bin # Add user bin to PATH
+    '';
+  };
   programs.kitty = {
   enable = true;
   shellIntegration = {
