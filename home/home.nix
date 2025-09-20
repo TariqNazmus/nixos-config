@@ -26,8 +26,59 @@
     mode = "no-rc"; # This enables shell integration
   };
 };
-  home.sessionVariables = {
-    TERMINAL = "fish";
+  #home.sessionVariables = {
+  #  TERMINAL = "fish";
+  #};
+  # Configure Waybar
+  programs.waybar = {
+    enable = true;
+    settings = {
+      mainBar = {
+        layer = "top";
+        position = "top";
+        height = 30;
+        modules-left = [ "hyprland/workspaces" ];
+        modules-center = [ "clock" ];
+        modules-right = [ "network" "battery" "tray" ];
+        "hyprland/workspaces" = {
+          format = "{name}";
+          on-click = "activate";
+        };
+        clock = {
+          format = "{:%Y-%m-%d %H:%M}";
+        };
+        network = {
+          format-wifi = "{essid} ({signalStrength}%)";
+          format-ethernet = "Connected";
+          format-disconnected = "Disconnected";
+        };
+        battery = {
+          format = "{capacity}% {icon}";
+          format-icons = [ "🔋" "🔌" ];
+        };
+      };
+    };
+    style = ''
+      * {
+        font-family: monospace;
+        font-size: 13px;
+        color: #ffffff;
+      }
+      #waybar {
+        background: #1a1b26;
+        border-bottom: 2px solid #414868;
+      }
+      #workspaces button {
+        padding: 0 5px;
+        color: #a9b1d6;
+      }
+      #workspaces button:hover {
+        background: #414868;
+      }
+      #clock, #network, #battery, #tray {
+        padding: 0 10px;
+      }
+    '';
   };
   # Configure Hyprland
   wayland.windowManager.hyprland = {
