@@ -35,7 +35,7 @@
         drop_shadow = true;
       };
       "$mod" = "SUPER";
-      [
+      bind = [
 
         # Applications
         $mod, RETURN, exec, kitty    # Open the terminal
