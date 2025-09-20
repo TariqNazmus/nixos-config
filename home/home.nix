@@ -11,6 +11,7 @@
     wofi # A launcher/menu for Wayland
     hyprland # Ensure Hyprland is available for the user
   ];
+  programs.fish.enable = true;
   programs.kitty = {
   enable = true;
   shellIntegration = {
