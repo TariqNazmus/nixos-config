@@ -16,6 +16,8 @@
     font-awesome # For Font Awesome icons
     material-icons # For Material Icons
     fira # For Fira Sans font
+    thunar # File manager
+    gvfs   # For Thunar trash and mount support
   ];
   # Import component configurations
   imports = [

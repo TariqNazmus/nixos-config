@@ -29,6 +29,7 @@
         # Applications
         "$mod, RETURN, exec, kitty"    # Open the terminal
         "$mod, B, exec, firefox"          # Open the browser
+        "$mod, F, exec, thunar" # Launch Thunar
         # Windows
         "$mod, Q, killactive"                                                              # Kill active window
         "$mod SHIFT, Q, exec, hyprctl activewindow | grep pid | tr -d 'pid:' | xargs kill" # Quit active window and all open instances
