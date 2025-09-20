@@ -38,17 +38,17 @@
       bind = [
 
         # Applications
-        $mod, RETURN, exec, kitty    # Open the terminal
-        $mod, B, exec, firefox          # Open the browser
-# Windows
-"$mod, Q, killactive"                                                              # Kill active window
-"$mod SHIFT, Q, exec, hyprctl activewindow | grep pid | tr -d 'pid:' | xargs kill" # Quit active window and all open instances
-"$mod, F, fullscreen, 0"                                                           # Set active window to fullscreen
-"$mod, M, fullscreen, 1"                                                           # Maximize Window
-"$mod, T, togglefloating"                                                          # Toggle active windows into floating mode
+        "$mod, RETURN, exec, kitty"    # Open the terminal
+        "$mod, B, exec, firefox"          # Open the browser
+        # Windows
+        "$mod, Q, killactive"                                                              # Kill active window
+        "$mod SHIFT, Q, exec, hyprctl activewindow | grep pid | tr -d 'pid:' | xargs kill" # Quit active window and all open instances
+        "$mod, F, fullscreen, 0"                                                           # Set active window to fullscreen
+        "$mod, M, fullscreen, 1"                                                           # Maximize Window
+        "$mod, T, togglefloating"                                                          # Toggle active windows into floating mode
                                                        # Move focus down
-# Actions
-#$mod CTRL, R, exec, hyprctl reload                                             # Reload Hyprland configuration
+        # Actions
+        "$mod CTRL, R, exec, hyprctl reload"                                             # Reload Hyprland configuration
 
 # Workspaces
 #$mod, 1, workspace, 1  # Open workspace 1
