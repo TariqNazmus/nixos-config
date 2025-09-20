@@ -8,7 +8,6 @@
   home.packages = with pkgs; [
     waybar # A customizable bar for Wayland
     wofi # A launcher/menu for Wayland
-    kitty # A terminal emulator
     hyprland # Ensure Hyprland is available for the user
   ];
   home.sessionVariables = {
