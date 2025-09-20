@@ -13,7 +13,7 @@
     #};
   };
 
-  outputs = inputs@{ nixpkgs, home-manager,stylix, ... }:{
+  outputs = inputs@{ nixpkgs, home-manager, ... }:{
     systems = [
       "x86_64-linux"
     ];
