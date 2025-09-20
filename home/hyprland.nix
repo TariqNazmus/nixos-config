@@ -4,7 +4,7 @@
       # Configure Hyprland
   wayland.windowManager.hyprland = {
     enable = true;
-    settings = { };
+    settings = {
       monitor = ",preferred,auto,1"; # Auto-detect monitor
       exec-once = [
         "waybar &" # Launch Waybar
