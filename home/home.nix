@@ -6,10 +6,17 @@
   programs.home-manager.enable = true;
 # Install user packages
   home.packages = with pkgs; [
+    kitty
     waybar # A customizable bar for Wayland
     wofi # A launcher/menu for Wayland
     hyprland # Ensure Hyprland is available for the user
   ];
+  programs.kitty = {
+  enable = true;
+  shellIntegration = {
+    mode = "no-rc"; # This enables shell integration
+  };
+};
   home.sessionVariables = {
     TERMINAL = "fish";
   };

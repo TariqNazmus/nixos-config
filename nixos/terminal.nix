@@ -15,10 +15,5 @@
     ripgrep
     fzf
   ];
-programs.kitty = {
-  enable = true;
-  shellIntegration = {
-    mode = "no-rc"; # This enables shell integration
-  };
-};
+
 }
